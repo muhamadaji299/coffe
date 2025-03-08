@@ -1,0 +1,434 @@
+**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins' , sans-serif;
+  }
+  body{
+    color: #ff1313;
+    background: #80b6dc;
+  }
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  .logo{
+    position: relative;
+    font-size: 25px;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .logo span{
+    color: darkgoldenrod;
+  }
+  .navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+  }
+  .navbar a:hover{
+    color: darkgoldenrod;
+  }
+  .home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url(../img/coffee.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+  }
+  .home-content{
+    max-width: 600px;
+  }
+  .home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #ccc;
+  }
+  .home-content h3:nth-of-type(2){
+  margin-bottom: 30px;
+  }
+  .home-content h3 span{
+   color: #0ef;
+  }
+  .home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    color: #ccc;
+  }
+  .home-content p{
+    font-size: 20px;
+    color: #ccc;
+  }
+  .home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid darkgoldenrod;
+    border-radius: 50%;
+    font-size: 20px;
+    color: darkgoldenrod;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+  }
+  .home-sci a:hover{
+    background: darkgoldenrod;
+    color: #081b29;
+    box-shadow: 0 0 20px darkgoldenrod;
+  }
+  .btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background:darkgoldenrod;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 5px darkgoldenrod,;
+  }
+  .btn-box:hover{
+   color: #081b29;
+  }
+  .btn-boox{
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 16px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 2px solid #ffffff; /* Green */
+    border-radius: 5px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 5px rgb(255, 254, 251),;
+  }
+  .btn-boox:hover{
+   color: #555;
+  }
+  
+  /* Styling untuk bagian Tentang Kami */
+  .about-section {
+    padding: 60px 20px;
+    background-color: rgb(218, 189, 117);
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4a2c2a;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-text {
+    max-width: 500px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .about-text h3 {
+    font-size: 2rem;
+    color: #4a2c2a;
+    margin-bottom: 10px;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+  }
+  
+  .comentar-section {
+    padding: 60px 20px;
+    background-color: rgb(218, 189, 117);
+    text-align: center;
+  }
+  .customer-comments {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .customer-comments h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .comments-container {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  
+  .comment {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comment p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Optional: Add smooth scrolling */
+  .comments-container {
+    scroll-behavior: smooth;
+  }
+  
+  
+  #produk {
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .produk-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .produk-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+  }
+  
+  .produk-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .produk-card h3 {
+    margin: 10px 0;
+  }
+  
+  .produk-card p {
+    color: #555;
+  }
+  /* Styling untuk tombol */
+  .buy-button, .cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .cart-button {
+    background-color: #007bff;
+  }
+  
+  /* Hover effect */
+  .buy-button:hover {
+    background-color: #cc5500;
+  }
+  
+  .cart-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Ikon di dalam tombol */
+  .cart-button img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  #contact {
+    text-align: center;
+    padding: 80px 20px;
+    background: #efefef;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4a2c2a;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+  
+  .contact-form label {
+    font-size: 1em;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  
+  .contact-form button {
+    background-color: #4a2c2a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    transition: background 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #cc5500;
+  }
+  .footer-section {
+    background: rgb(72, 57, 57);
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .footer-about h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .footer-links ul 
+  {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 8px 0;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: darkgoldenrod;
+  }
+  
+  .footer-contact p {
+    margin: 8px 0;
+  }
+  
+  .footer-social .social-icons a {
+    font-size: 24px;
+    color: white;
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  
+  .footer-social .social-icons a:hover {
+    color: #4caf50;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 40px;
+    font-size: 0.9rem;
+  }
